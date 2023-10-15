@@ -32,17 +32,17 @@ const Header = () => {
           </button>
         </div>
         <div className={cx("actions")}>
-          <div className={cx("user")}>
+          <Link className={cx("user")} to={config.routes.login}>
             <FontAwesomeIcon icon={faUser} style={{ marginRight: "16px" }} />
             <p>Tài Khoản</p>
-          </div>
-          <div className={cx("cart")}>
+          </Link>
+          <Link className={cx("cart")}>
             <FontAwesomeIcon
               icon={faCartShopping}
               style={{ marginRight: "16px" }}
             />
             <p>Đơn hàng</p>
-          </div>
+          </Link>
         </div>
       </div>
     </header>

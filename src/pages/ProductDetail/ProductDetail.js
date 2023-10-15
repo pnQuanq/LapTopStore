@@ -4,14 +4,17 @@ import styles from "./ProductDetail.module.scss";
 import classNames from "classnames/bind";
 import linkien from "../../assets/images/linkien.webp";
 
+import { useLocation } from "react-router-dom";
+
 const cx = classNames.bind(styles);
-const ProductDetail = () => {
+const ProductDetail = (props) => {
+  const location = useLocation();
   return (
     <div className={cx("wrapper")}>
       <div className={cx("container-content")}>
         <div className={cx("container-image")}>
           <div className={cx("image")}>
-            <img src={linkien} alt="linkien" />
+            <img src={location.state.image} alt="linkien" />
           </div>
           <div className={cx("list-image")}>
             <img src={linkien} alt="linkien" />
@@ -24,7 +27,7 @@ const ProductDetail = () => {
         <div className={cx("container-info")}>
           <div className={cx("base-info")}>
             <div className={cx("name")}>
-              <p>Laptop Asus Vivobook S14 S433EA-EB076T</p>
+              <p>alo blo</p>
             </div>
             <div className={cx("rate")}>
               <p>4.5*| Sold 10</p>

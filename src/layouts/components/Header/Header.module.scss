@@ -68,9 +68,11 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
         height: 80%;
         padding: 0 12px;
         border-radius: 12px;
+        color: #000;
         &:hover{
             cursor: pointer;
             background-color: aqua;
@@ -82,10 +84,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
         margin-left: 2px;
         height: 80%;
         padding: 0 12px;
         border-radius: 12px;
+        color: #000;
         &:hover{
             cursor: pointer;
             background-color: aqua;

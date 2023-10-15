@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import CardItem from "../../components/CardItem/CardItem";
 import Data from "../../Data/Data";
+
 const cx = classNames.bind(styles);
 
 const Home = () => {
@@ -19,7 +20,6 @@ const Home = () => {
       <div className={cx("slide")}>
         <MySlider />
       </div>
-
       <div className={cx("content")}>
         <div className={cx("content-pcgaming")}>
           <p>Pc Gaming bán chạy</p>
