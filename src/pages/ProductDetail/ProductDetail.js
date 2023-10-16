@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./ProductDetail.module.scss";
 import classNames from "classnames/bind";
 import linkien from "../../assets/images/linkien.webp";
+import { AiFillStar } from "react-icons/ai";
 
 import { useLocation } from "react-router-dom";
 
@@ -30,7 +31,17 @@ const ProductDetail = (props) => {
               <p>{location.state.name}</p>
             </div>
             <div className={cx("rate")}>
-              <p>4.5*| Sold 10</p>
+              <p style={{ display: "flex", alignItems: "center" }}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <AiFillStar color="yellow" size="2rem" />
+                  <AiFillStar color="yellow" size="2rem" />
+                  <AiFillStar color="yellow" size="2rem" />
+                  <AiFillStar color="yellow" size="2rem" />
+                  <AiFillStar color="yellow" size="2rem" />
+                </div>
+
+                <span style={{ marginLeft: "8px" }}>0 đánh giá</span>
+              </p>
             </div>
             <div className={cx("price")}>
               <p>{location.state.price}</p>
@@ -75,6 +86,14 @@ const ProductDetail = (props) => {
           </div>
         </div>
       </div>
+
+      <div className={cx("container-description")}>
+        <p style={{ fontSize: "18px" }}>Mô tả sản phẩm</p>
+        <div className={cx("description")}>
+          <p>Mô tả sản phẩm này:</p>
+        </div>
+      </div>
+
       <div className={cx("container-comments")}>
         <p style={{ fontSize: "18px" }}>Đánh giá và nhận xét</p>
         <div className={cx("product-review")}>

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./CardItem.module.scss";
 import classNames from "classnames/bind";
 import { useNavigate } from "react-router-dom";
+import { AiFillStar } from "react-icons/ai";
 
 const cx = classNames.bind(styles);
 
@@ -9,14 +10,23 @@ const CardItem = ({ props }) => {
   const navigate = useNavigate();
   const handleDetail = () => {
     navigate("/productdetail", {
-      replace: true,
+      replace: false,
       state: {
         id: props.id,
         name: props.name,
+        rate: props.rate,
         price: props.price,
         image: props.image,
       },
     });
+  };
+
+  const renderRate = () => {
+    let result = [];
+    for (let i = 0; i < parseInt(props.rate); i++) {
+      result.push(<AiFillStar color="yellow" size="1.5rem" key={i} />);
+    }
+    return result;
   };
 
   return (
@@ -32,6 +42,7 @@ const CardItem = ({ props }) => {
       </div>
       <div className={cx("info")}>
         <p className={cx("name")}>{props.name}</p>
+        <div className={cx("rate")}>{renderRate()}</div>
         <p className={cx("price")}> {props.price} </p>
       </div>
     </div>

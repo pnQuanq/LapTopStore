@@ -15,7 +15,7 @@ const PCGaming = () => {
     <div className={cx("container")}>
       <div className={cx("content")}>
         <div className={cx("content-pcgaming")}>
-          <p>Pc Gaming bán chạy</p>
+          <p>PC Gaming giá tốt</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (
@@ -26,8 +26,22 @@ const PCGaming = () => {
             </Swiper>
           </div>
         </div>
-        <div className={cx("content-laptop")}>
-          <p>Laptop bán chạy</p>
+
+        <div className={cx("content-pcgaming")}>
+          <p>PC Gaming chiến game mượt</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-pcgaming")}>
+          <p>PC Gaming cao cấp</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (

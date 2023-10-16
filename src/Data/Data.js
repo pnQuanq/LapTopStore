@@ -8,6 +8,7 @@ const Data = [
   {
     id: 1,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 3,
     price: "18.990.000đ",
     image: pc,
   },
@@ -15,6 +16,7 @@ const Data = [
   {
     id: 2,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 3.9,
     price: "18.990.000đ",
     image: laptop1,
   },
@@ -22,6 +24,7 @@ const Data = [
   {
     id: 3,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 4,
     price: "18.990.000đ",
     image: laptop2,
   },
@@ -29,6 +32,7 @@ const Data = [
   {
     id: 4,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: laptop3,
   },
@@ -36,6 +40,7 @@ const Data = [
   {
     id: 5,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: laptop2,
   },
@@ -43,6 +48,7 @@ const Data = [
   {
     id: 6,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: laptop7,
   },
@@ -50,6 +56,7 @@ const Data = [
   {
     id: 7,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: laptop1,
   },
@@ -57,6 +64,7 @@ const Data = [
   {
     id: 8,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: pc,
   },
@@ -64,6 +72,7 @@ const Data = [
   {
     id: 9,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: laptop3,
   },
@@ -71,6 +80,7 @@ const Data = [
   {
     id: 10,
     name: "Laptop Asus Vivobook S14 S433EA-EB076T",
+    rate: 5,
     price: "18.990.000đ",
     image: laptop7,
   },

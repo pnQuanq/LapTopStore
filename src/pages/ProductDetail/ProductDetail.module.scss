@@ -16,6 +16,17 @@
 
 }
 
+.container-description{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: max-content;
+    padding: 16px 0;
+    margin-top: 16px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
 .container-comments{
     display: flex;
     width: 100%;

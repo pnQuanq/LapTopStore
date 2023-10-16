@@ -22,7 +22,7 @@ const Home = () => {
       </div>
       <div className={cx("content")}>
         <div className={cx("content-hot-product")}>
-          <p>Sản phẩm bán chạy</p>
+          <p>Sản phẩm nổi bật</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (
@@ -34,7 +34,46 @@ const Home = () => {
           </div>
         </div>
         <div className={cx("content-hot-product")}>
-          <p>Sản phẩm bán chạy</p>
+          <p>PC bán chạy</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-hot-product")}>
+          <p>PC Gaming bán chạy</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-hot-product")}>
+          <p>Laptop văn phòng bán chạy</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-hot-product")}>
+          <p>Laptop Gaming bán chạy</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (

@@ -14,8 +14,8 @@ const LaptopGaming = () => {
   return (
     <div className={cx("container")}>
       <div className={cx("content")}>
-        <div className={cx("content-pcgaming")}>
-          <p>Pc Gaming bán chạy</p>
+        <div className={cx("content-laptop")}>
+          <p>Laptop ASUS</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (
@@ -26,8 +26,48 @@ const LaptopGaming = () => {
             </Swiper>
           </div>
         </div>
+
         <div className={cx("content-laptop")}>
-          <p>Laptop bán chạy</p>
+          <p>Laptop ACER</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-laptop")}>
+          <p>Laptop LENOVO</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-laptop")}>
+          <p>Laptop MSI</p>
+          <div className={cx("items-wrapper")}>
+            <Swiper spaceBetween={10} slidesPerView={6}>
+              {Data.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <CardItem props={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className={cx("content-laptop")}>
+          <p>Laptop DELL</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (
