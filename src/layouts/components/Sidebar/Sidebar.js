@@ -6,8 +6,7 @@ import config from "../../../config";
 import { AiOutlineLaptop } from "react-icons/ai";
 import { SiYoutubegaming } from "react-icons/si";
 import { FaComputer, FaDisplay, FaHeadphonesSimple } from "react-icons/fa6";
-import { BsCpu, BsMouse2, BsController } from "react-icons/bs";
-import { GiOfficeChair } from "react-icons/gi";
+import { BsCpu, BsController } from "react-icons/bs";
 
 const cx = classNames.bind(styles);
 
@@ -46,19 +45,9 @@ const Sidebar = () => {
           icon={<FaDisplay size="32px" />}
         />
         <MenuItem
-          title="Chuột + lót chuột"
-          to={config.routes.chuot}
-          icon={<BsMouse2 size="32px" />}
-        />
-        <MenuItem
           title="Tai Nghe - Loa"
           to={config.routes.tainghevloa}
           icon={<FaHeadphonesSimple size="32px" />}
-        />
-        <MenuItem
-          title="Ghế - Bàn Gaming"
-          to={config.routes.ghebangaming}
-          icon={<GiOfficeChair size="32px" />}
         />
         <MenuItem
           title="Phụ kiện"

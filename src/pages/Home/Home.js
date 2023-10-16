@@ -21,8 +21,8 @@ const Home = () => {
         <MySlider />
       </div>
       <div className={cx("content")}>
-        <div className={cx("content-pcgaming")}>
-          <p>Pc Gaming bán chạy</p>
+        <div className={cx("content-hot-product")}>
+          <p>Sản phẩm bán chạy</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (
@@ -33,8 +33,8 @@ const Home = () => {
             </Swiper>
           </div>
         </div>
-        <div className={cx("content-laptop")}>
-          <p>Laptop bán chạy</p>
+        <div className={cx("content-hot-product")}>
+          <p>Sản phẩm bán chạy</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
               {Data.map((item) => (

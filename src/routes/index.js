@@ -10,9 +10,7 @@ import PCGaming from "../pages/PCGaming/PCGaming";
 import PCNormal from "../pages/PCNormal/PCNormal";
 import Accessory from "../pages/Accessory/Accessory";
 import Screen from "../pages/Screen/Screen";
-import Mouse from "../pages/Mouse/Mouse";
 import Headphone from "../pages/Headphone/Headphone";
-import GamingChair from "../pages/GamingChair/GamingChair";
 import More from "../pages/More/More";
 import ProductDetail from "../pages/ProductDetail/ProductDetail";
 import Login from "../pages/Login/Login";
@@ -78,18 +76,8 @@ const publicRoutes = [
   },
 
   {
-    path: config.routes.chuot,
-    component: Mouse,
-  },
-
-  {
     path: config.routes.tainghevloa,
     component: Headphone,
-  },
-
-  {
-    path: config.routes.ghebangaming,
-    component: GamingChair,
   },
 
   {

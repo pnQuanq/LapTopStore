@@ -27,13 +27,13 @@ const ProductDetail = (props) => {
         <div className={cx("container-info")}>
           <div className={cx("base-info")}>
             <div className={cx("name")}>
-              <p>alo blo</p>
+              <p>{location.state.name}</p>
             </div>
             <div className={cx("rate")}>
               <p>4.5*| Sold 10</p>
             </div>
             <div className={cx("price")}>
-              <p>18.990.000đ</p>
+              <p>{location.state.price}</p>
             </div>
           </div>
           <div className={cx("option-info")}>
