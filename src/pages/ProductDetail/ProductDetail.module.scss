@@ -27,6 +27,27 @@
     border-radius: 16px;
 }
 
+
+.another-product{
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: #fff;
+    border-radius: 16px;
+    p{
+        padding-top: 24px;
+        font-size: 18px;
+        
+    }
+}
+
+.items-wrapper{
+    position: relative;
+    padding: 0 16px;
+    width: 100%;
+
+}
+
+
 .container-comments{
     display: flex;
     width: 100%;

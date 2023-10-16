@@ -10,7 +10,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CardItem from "../../components/CardItem/CardItem";
 import Data from "../../Data/Data";
 const cx = classNames.bind(styles);
+
 const Laptop = () => {
+  const NormalLaptopASUS = Data.filter((index) => {
+    return index.type === "normal-laptop" && index.company === "ASUS";
+  });
+
+  const NormalLaptopACER = Data.filter((index) => {
+    return index.type === "normal-laptop" && index.company === "ACER";
+  });
+
+  const NormalLaptopLENOVO = Data.filter((index) => {
+    return index.type === "normal-laptop" && index.company === "LENOVO";
+  });
+
+  const NormalLaptopMSI = Data.filter((index) => {
+    return index.type === "normal-laptop" && index.company === "MSI";
+  });
+
+  const NormalLaptopDELL = Data.filter((index) => {
+    return index.type === "normal-laptop" && index.company === "DELL";
+  });
+
   return (
     <div className={cx("container")}>
       <div className={cx("content")}>
@@ -18,7 +39,7 @@ const Laptop = () => {
           <p>Laptop ASUS</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalLaptopASUS.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -31,7 +52,7 @@ const Laptop = () => {
           <p>Laptop ACER</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalLaptopACER.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -44,7 +65,7 @@ const Laptop = () => {
           <p>Laptop LENOVO</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalLaptopLENOVO.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -57,7 +78,7 @@ const Laptop = () => {
           <p>Laptop MSI</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalLaptopMSI.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -70,7 +91,7 @@ const Laptop = () => {
           <p>Laptop DELL</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalLaptopDELL.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>

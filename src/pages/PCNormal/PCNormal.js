@@ -11,6 +11,9 @@ import CardItem from "../../components/CardItem/CardItem";
 import Data from "../../Data/Data";
 const cx = classNames.bind(styles);
 const PCNormal = () => {
+  const NormalPc = Data.filter((index) => {
+    return index.type === "normal-pc";
+  });
   return (
     <div className={cx("container")}>
       <div className={cx("content")}>
@@ -18,7 +21,7 @@ const PCNormal = () => {
           <p>Pc Gaming bán chạy</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalPc.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -30,7 +33,7 @@ const PCNormal = () => {
           <p>Laptop bán chạy</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalPc.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>

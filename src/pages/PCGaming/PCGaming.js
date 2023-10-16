@@ -11,6 +11,10 @@ import CardItem from "../../components/CardItem/CardItem";
 import Data from "../../Data/Data";
 const cx = classNames.bind(styles);
 const PCGaming = () => {
+  const NormalPc = Data.filter((index) => {
+    return index.type === "gaming-pc";
+  });
+
   return (
     <div className={cx("container")}>
       <div className={cx("content")}>
@@ -18,7 +22,7 @@ const PCGaming = () => {
           <p>PC Gaming giá tốt</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalPc.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -31,7 +35,7 @@ const PCGaming = () => {
           <p>PC Gaming chiến game mượt</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalPc.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>
@@ -44,7 +48,7 @@ const PCGaming = () => {
           <p>PC Gaming cao cấp</p>
           <div className={cx("items-wrapper")}>
             <Swiper spaceBetween={10} slidesPerView={6}>
-              {Data.map((item) => (
+              {NormalPc.map((item) => (
                 <SwiperSlide key={item.id}>
                   <CardItem props={item} />
                 </SwiperSlide>

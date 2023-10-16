@@ -5,6 +5,14 @@ import classNames from "classnames/bind";
 import linkien from "../../assets/images/linkien.webp";
 import { AiFillStar } from "react-icons/ai";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import CardItem from "../../components/CardItem/CardItem";
+import Data from "../../Data/Data";
+
 import { useLocation } from "react-router-dom";
 
 const cx = classNames.bind(styles);
@@ -91,6 +99,19 @@ const ProductDetail = (props) => {
         <p style={{ fontSize: "18px" }}>Mô tả sản phẩm</p>
         <div className={cx("description")}>
           <p>Mô tả sản phẩm này:</p>
+        </div>
+      </div>
+
+      <div className={cx("another-product")}>
+        <p>Sản phẩm bạn có thể quan tâm</p>
+        <div className={cx("items-wrapper")}>
+          <Swiper spaceBetween={10} slidesPerView={8}>
+            {Data.map((item) => (
+              <SwiperSlide key={item.id}>
+                <CardItem props={item} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 
