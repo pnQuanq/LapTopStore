@@ -36,7 +36,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faUser} style={{ marginRight: "16px" }} />
             <p>Tài Khoản</p>
           </Link>
-          <Link className={cx("cart")}>
+          <Link className={cx("cart")} to={config.routes.cart}>
             <FontAwesomeIcon
               icon={faCartShopping}
               style={{ marginRight: "16px" }}
