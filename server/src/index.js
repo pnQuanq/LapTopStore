@@ -12,13 +12,13 @@ app.get('/', (req, res) => {
 
 const mongoose=require("mongoose");
 
-mongoose.connect(`mongodb+srv://admin:${process.env.MONGO_DB}@cluster0.63booln.mongodb.net/?retryWrites=true&w=majority`).then(()=>{
-    console.log("connection success")
+mongoose.connect(process.env.MONGO_DB).then(()=>{
+    console.log("connection success");
 });
 
+const db= mongoose.connection.useDb('LapTopStore');
 
 
-console.log(process.env.MONGO_DB);
 
 app.listen(port, () => {
     console.log('Server is running in port: ', + port)
