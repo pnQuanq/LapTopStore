@@ -1,11 +1,8 @@
 import React from "react";
 
 const Cart = () => {
-  return (
-  <div>
-    <p style={{backgroundColor: 'red', display: 'inline-block'}}>
-      Cart
-    </p>
-  </div>)
+  return <div>Caggrjdivgjrt</div>;
 };
+
+
 export default Cart;
