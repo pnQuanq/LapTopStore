@@ -1,6 +1,6 @@
 const routes = {
   home: "/",
-  order: "/order", //đơn hàng
+  order: "/order", // đơn hàng
   cart: "/cart", // giỏ hàng
   laptop: "/laptop",
   laptopgaming: "/laptopgaming",
