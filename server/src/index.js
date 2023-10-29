@@ -1,25 +1,31 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const mongoose=require("mongoose");
+const routes = require('./routes');
+const bodyParser = require("body-parser");
 
 dotenv.config()
 
 const app = express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3001
 
-app.get('/', (req, res) => {
-    return res.send('Hello')
-})
+app.use(bodyParser.json())
 
-const mongoose=require("mongoose");
+routes(app);
 
-mongoose.connect(process.env.MONGO_DB).then(()=>{
-    console.log("connection success");
-});
 
-const db= mongoose.connection.useDb('LapTopStore');
-
+mongoose.connect(`${process.env.MONGO_DB}`)
+    .then(() => {
+        console.log("connection DB success")
+    })
+    .catch((err) => {
+        console.log(err)
+    })
 
 
 app.listen(port, () => {
     console.log('Server is running in port: ', + port)
 })
+
+
+const db= mongoose.connection.useDb('LapTopStore');
