@@ -41,7 +41,7 @@ const Header = () => {
               icon={faCartShopping}
               style={{ marginRight: "16px" }}
             />
-            <p>Đơn hàng</p>
+            <p>Giỏ hàng</p>
           </Link>
         </div>
       </div>
