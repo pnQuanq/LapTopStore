@@ -34,7 +34,7 @@ const Header = () => {
         <div className={cx("actions")}>
           <Link className={cx("user")} to={config.routes.login}>
             <FontAwesomeIcon icon={faUser} style={{ marginRight: "16px" }} />
-            <p>Tài Khoản</p>
+            <p>Tài khoản</p>
           </Link>
           <Link className={cx("cart")} to={config.routes.cart}>
             <FontAwesomeIcon

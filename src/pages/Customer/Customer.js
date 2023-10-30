@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Cart.module.scss";
+import styles from "./.module.scss";
 import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
-const Cart = () => {
+const Customer = () => {
   return (<div className={cx("flex-col")}>
     <h2>Giỏ hàng</h2>
     <div className={cx("flex")} style={{gap: '2rem'}}>
@@ -71,4 +71,4 @@ const Cart = () => {
   </div>);
 };
 
-export default Cart;
+export default Customer;
