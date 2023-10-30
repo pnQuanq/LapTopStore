@@ -5,7 +5,7 @@ import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
 const Cart = () => {
   return (<div className={cx("flex-col")}>
-    <h2>Giỏ hàng</h2>
+    <h1 style={{paddingBlock: '1rem'}}>Giỏ hàng</h1>
     <div className={cx("flex")} style={{gap: '2rem'}}>
       <div className={cx("cart-container")}>
         <div className={cx("item-container")}>
