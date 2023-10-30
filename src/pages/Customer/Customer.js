@@ -1,74 +1,108 @@
 import React from "react";
-import styles from "./.module.scss";
+import styles from "./Customer.module.scss";
 import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
 const Customer = () => {
-  return (<div className={cx("flex-col")}>
-    <h2>Giỏ hàng</h2>
-    <div className={cx("flex")} style={{gap: '2rem'}}>
-      <div className={cx("cart-container")}>
-        <div className={cx("item-container")}>
-          <div className={cx("flex")} style={{flex: "1 1 40%", alignItems: 'center'}}>
-            <input type="checkbox"></input>
-            <label>Tất cả (1 sản phẩm)</label>
-          </div>
-          <div className={cx("flex")} style={{flex: "1 1 60%", justifyContent: 'space-around',
-          }}>
-            <div>Đơn giá</div>
-            <div>Số lượng</div>
-            <div>Thành tiền</div>
-            <div>Icon</div>
-          </div>
-        </div>
-        <div className={cx("item-container")}>
-          <div className={cx("flex")} style={{flex: "1 1 40%", alignItems: 'center'}}>
-            <input type="checkbox"></input>
-            <img src="/static/media/pc.da3985e199b2bc4bc470.png" alt="Item" style={{width: "5rem", height: "5rem"}}></img>
-            Ipad
-          </div>
-          <div className={cx("flex")} style={{flex: "1 1 60%", justifyContent: 'space-around',
-          }}>
-            <div>200.000 VND</div>
-            <div>3</div>
-            <div style={{color: 'red'}}>600.000 VND</div>
-            <div>Icon</div>
-          </div>
-        </div>
-      </div>
-
-      <div className={cx("shipping-container")}>
-        <div className={cx("flex-aic")}>
-          Địa chỉ:&nbsp;
-          <span className={cx("bold")}>HCM HCM</span>
-          <button className={cx("change-button")}>Thay đổi</button>
-        </div>
-        
-        <div className={cx("flex-between")}>
-          Tạm tính
-          <span className={cx("bold")}>600.000 VND</span>
-        </div>
-
-        <div className={cx("flex-between")}>
-          Giảm giá
-          <span className={cx("bold")}>90.000 VND</span>
-        </div>
-        <div className={cx("flex-between")}>
-          Phí giao hàng
-          <span className={cx("bold")}>0 VND</span>
+  return (<>
+    <h1>Thông tin tài khoản</h1>
+    <div className={cx("customer-container")}>
+      <div className={cx("contents-container")}>
+        <h3>Thông tin cá nhân</h3>
+        <img src="/static/media/pc.da3985e199b2bc4bc470.png" alt="Avatar"></img>
+        <table>
+          <tr>
+            <td>
+              <label>Họ và tên</label>
+            </td>
+            <td>
+              <input type="text"></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Ngày sinh</label>
+            </td>
+            <td>
+              <input type="text" placeholder="06/09/1969"></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Giới tính</label>
+            </td>
+            <td>
+              <input type="radio" name="gender"></input>
+              <label>Nam</label>
+              <input type="radio" name="gender"></input>
+              <label>Nữ</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Quốc tịch</label>
+            </td>
+            <td>
+            <input type="text" value="Việt Nam"></input>
+            </td>
+          </tr>
+          </table>
+        <div className={cx("centered-btn")}>
+          <button>
+            Lưu thay đổi
+          </button>
         </div>
         
-        <div className={cx("flex-between")}>
-          Tổng tiền 
-          <div className={cx("flex-col")}>
-            <span style={{fontSize: 32, fontWeight: 'bold', color: 'red'}}>510.000 VND</span>
-            <span style={{fontSize: 12, fontStyle: 'italic',}}>(Đã bao gồm VAT nếu có)</span>
-          </div>
-        </div>
-        <button className={cx("buy-button")}>Mua hàng</button>
       </div>
-    </div>
-  </div>);
-};
-
-export default Customer;
+      <div className={cx("misc-container")}>
+        <table>
+          <tr>
+            <th colspan="2">
+              <h3>Thông tin liên lạc</h3>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Số điện thoại<br />
+              0969XXXXXX
+            </td>
+            <td>
+              <button>
+                Cập nhật
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Địa chỉ email<br />
+              abcxyz@gmail.com
+            </td>
+            <td>
+              <button>
+                Cập nhật
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <h3>Bảo mật</h3>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Đổi mật khẩu
+            </td>
+            <td>
+              <button>
+                Cập nhật
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </>);
+  };
+  
+  export default Customer;
+  
