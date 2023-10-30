@@ -2,7 +2,8 @@ import config from "../config";
 
 import Home from "../pages/Home/Home";
 import Order from "../pages/Order/Order";
-import cart from "../pages/Cart/cart";
+import Cart from "../pages/Cart/Cart";
+import Customer from "../pages/Customer/Customer";
 import HeaderOnly from "../layouts/HeaderOnly/HeaderOnly";
 import Laptop from "../pages/Laptop/Laptop";
 import LaptopGaming from "../pages/LaptopGaming/LaptopGaming";
@@ -41,7 +42,13 @@ const publicRoutes = [
 
   {
     path: config.routes.cart,
-    component: cart,
+    component: Cart,
+    layout: HeaderOnly,
+  },
+
+  {
+    path: config.routes.customer,
+    component: Customer,
     layout: HeaderOnly,
   },
 

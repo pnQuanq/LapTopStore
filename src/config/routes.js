@@ -2,6 +2,7 @@ const routes = {
   home: "/",
   order: "/order", // đơn hàng
   cart: "/cart", // giỏ hàng
+  customer: "/customer", // thông tin khách hàng
   laptop: "/laptop",
   laptopgaming: "/laptopgaming",
   pcgaming: "/pcgaming",
